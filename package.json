@@ -15,11 +15,14 @@
     "url": "https://github.com/tj/commander.js.git"
   },
   "devDependencies": {
+    "mocha": "^2.5.3",
     "should": ">= 0.0.1",
     "sinon": ">=1.17.1"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "test:mocha": "mocha",
+    "test:watch": "npm run test:mocha -- --watch"
   },
   "main": "index",
   "engines": {
